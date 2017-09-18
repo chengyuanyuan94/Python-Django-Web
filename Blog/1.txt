@@ -1,0 +1,6 @@
+ÖªÊ¶Á´½Ó£º
+http://code.ziqiangxuetang.com/django/django-tutorial.html
+http://python.usyiyi.cn/translate/django_182/index.html
+http://djangobook.py3k.cn/2.0/
+http://www.cnblogs.com/nulige/p/6558207.html
+http://wybblog.applinzi.com/blog/list/python/3/
