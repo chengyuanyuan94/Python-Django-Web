@@ -1,0 +1,18 @@
+{% extends "template_fenye.html" %}
+{% block bodycontent %}
+{% load static %}
+<!-- 加载文章内容 -->
+<div id="index_view">
+    <h2 class="t_nav"><a href="/">网站首页</a><a href="/">慢生活</a></h2>
+    {% block content %}  
+      <h1 class="c_titile">{{blog.content_title}}</h1>
+      <p class="box">发布时间：{{blog.content_create_date}}<span>编辑：{{blog.content_author}}</span>阅读（{{blog.content_read}}）</p>
+      <ul>
+        <p>{{blog.content_jianjie}}</p>
+        <p><img src="{{blog.content_img}}"></p> 
+        <p>{{blog.content_content}}</p>
+      </ul>
+    {% endblock %}
+</div>
+<!-- 加载文章内容 -->
+{% endblock bodycontent %}

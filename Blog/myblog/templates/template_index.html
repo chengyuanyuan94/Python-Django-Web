@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Tester_Jingel</title>
+<meta name="keywords" content="Tester_Jingel ,软件测试,自动化测试,selenium,appium,jmeter," />
+<meta name="description" content="这是一个有关黑色时间轴的css3 html5 网站模板" />
+{% load static %}
+<link rel="shortcut icon" type="image/x-icon" href="http://www.easyicon.net/api/resizeApi.php?id=1207053&size=24" />
+<link href="{% static '/css/styles.css' %}" rel="stylesheet">
+<link href="{% static '/css/animation.css' %}" rel="stylesheet">
+<link href="{% static '/css/view.css' %}" rel="stylesheet">
+<!-- 返回顶部调用 begin -->
+<link href="{% static '/css/lrtk.css' %}" rel="stylesheet" />
+<script type="text/javascript" src="{% static '/js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static '/js/js.js' %}"></script>
+<!-- 返回顶部调用 end-->
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+<style type="text/css">
+  .button {
+    background-color: #247979; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 23px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 20px 220px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+</head>
+<body>
+<header>
+  <nav id="nav">
+    <a href="{% url 'index' %}" ><img  src="{% static '/images/s8.jpg'%}" style= "width:80px"></a>
+    <ul>
+      <li><a href="{% url 'index' %}" >网站首页</a></li>
+      <li><a href="{% url 'article'  '1' %}" target="_blank" title="个人博客模板">全部文章</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="图书推荐">图书推荐</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="网站建设">网站建设</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="HTML5 / CSS3">HTML5 / CSS3</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="技术探讨">技术探讨</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="慢生活">慢生活</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="碎言碎语">碎言碎语</a></li>
+      <li><a href="{% url 'index' %}" target="_blank" title="JS 实例代码演示">JS实例</a></li>
+    </ul>
+    <script src="{% static '/js/silder.js' %}"></script><!--获取当前页导航 高亮显示标题--> 
+  </nav>
+</header>
+<!--header end-->
+
+{% block bodycontent %}
+{% endblock bodycontent %}
+
+<!--mainbody end-->
+<footer>
+  <div class="footer-mid">
+    <div class="links">
+      <h2>友情链接</h2>
+      <ul>
+        <li><a href="/">杨青个人博客</a></li>
+        <li><a href="http://www.3dst.com">3DST技术服务中心</a></li>
+      </ul>
+    </div>
+    <div class="visitors">
+      <h2>最新评论</h2>
+      <dl>
+        <dt><img src="{% static '/images/s8.jpg'%}">
+        <dt>
+        <dd>DanceSmile
+          <time>49分钟前</time>
+        </dd>
+        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-07-28/530.html" class="title">如果要学习web前端开发，需要学习什么？ </a>中评论：</dd>
+        <dd>文章非常详细，我很喜欢.前端的工程师很少，我记得几年前yahoo花高薪招聘前端也招不到</dd>
+      </dl>
+      <dl>
+        <dt><img src="{% static '/images/s7.jpg'%}">
+        <dt>
+        <dd>yisa
+          <time>2小时前</time>
+        </dd>
+        <dd>在 <a href="http://www.yangqq.com/news/s/2013-07-31/533.html" class="title">芭蕾女孩的心事儿</a>中评论：</dd>
+        <dd>我手机里面也有这样一个号码存在</dd>
+      </dl>
+      <dl>
+        <dt><img src="{% static '/images/s6.jpg'%}">
+        <dt>
+        <dd>小林博客
+          <time>8月7日</time>
+        </dd>
+        <dd>在 <a href="http://www.yangqq.com/jstt/bj/2013-06-18/285.html" class="title">如果个人博客网站再没有价值，你还会坚持吗？ </a>中评论：</dd>
+        <dd>博客色彩丰富，很是好看</dd>
+      </dl>
+    </div>
+    <section class="flickr">
+      <h2>摄影作品</h2>
+      <ul>
+        <li><a href="/"><img src="{% static '/images/01.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/02.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/03.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/04.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/05.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/06.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/07.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/08.jpg' %}"></a></li>
+        <li><a href="/"><img src="{% static '/images/09.jpg' %}"></a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="footer-bottom">
+    <p style = "text-align:center">Copyright 2017 Design by <a href="{% url 'index' %}">Tester_Jingel</a></p>
+  </div>
+</footer>
+<!-- jQuery仿腾讯回顶部和建议 代码开始 -->
+<div id="tbox"> <a id="togbook" href="/e/tool/gbook/?bid=1"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
+<!-- 代码结束 -->
+</body>
+</html>
+

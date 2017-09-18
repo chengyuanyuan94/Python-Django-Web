@@ -1,0 +1,56 @@
+{% extends "template_fenye.html" %}
+{% load static %}
+{% block bodycontent %}
+<div id="index_article">
+<ul class="bloglist">
+      {% for content in content_list %}
+      <li>
+        <a href="{% url 'view' content.id %}" target="_blank">
+        <div class="arrow_box">
+          <div class="ti"></div>
+          <!--三角形-->
+          <div class="ci"></div>
+          <!--圆形-->
+          <h2 class="title">{{content.content_title}}</h2>
+          <ul class="textinfo">
+            <img src="{{content.content_img}}">   
+            <p> {{content.content_jianjie}}</p>   
+          </ul>
+          <ul class="details">
+            <li class="icon-time">{{content.content_create_date}}</li>
+            <li ><a style="float: right ;color: #009ACD" href="">{{content.content_type}}</a></li>
+          </ul>
+          </a>
+        </div>
+        <!--arrow_box end--> 
+      </li>
+      {% endfor %}
+      <!-- 分页 -->
+      {% if errmsg == 'OK' %}
+        <nav>
+            <ul class="pagination">
+                <li>
+                    <a href="{% url 'article'  '1' %}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                {% for p in pages %}
+                    {% if page == p %}
+                        <li ><a class="active" href="{% url 'article'  p %}">{{ p }}</a></li>
+                    {% else %}
+                        <li><a href="{% url 'article'  p %}">{{ p }}</a></li>
+                    {% endif %}
+
+                {% endfor %}
+                <li id="end">
+                    <a href="{% url 'article' end %}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    {% endif %}
+   <!-- 分页 -->
+</ul>
+</div>   
+{% endblock bodycontent %}
